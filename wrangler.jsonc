@@ -1,0 +1,16 @@
+{
+  // Cloudflare Workers 静态站点配置
+  // 文档: https://developers.cloudflare.com/workers/static-assets/
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+
+  // 与 Cloudflare 控制台里填的项目名保持一致
+  "name": "mochang-blog",
+
+  "compatibility_date": "2026-09-14",
+
+  // Hexo 构建产物目录，wrangler 会把这里的内容作为站点资源上传
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
