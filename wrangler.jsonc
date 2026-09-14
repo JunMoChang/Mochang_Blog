@@ -8,6 +8,12 @@
 
   "compatibility_date": "2026-09-14",
 
+  // 保留 *.workers.dev 访问地址（当前唯一的线上入口）
+  "workers_dev": true,
+
+  // 非主分支构建时生成预览地址
+  "preview_urls": true,
+
   // Hexo 构建产物目录，wrangler 会把这里的内容作为站点资源上传
   "assets": {
     "directory": "./public",
