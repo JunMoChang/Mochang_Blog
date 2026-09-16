@@ -22,6 +22,7 @@
 index:
   # 首屏大背景图（对应 source/img/banner.jpg）
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
   # 首页副标题（"An elegant Material-Design theme for Hexo" 就在这）
   slogan:
@@ -53,6 +54,7 @@ footer:
 post:
   # 文章页大背景图
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
   meta:
     # 单篇文章的浏览量
@@ -83,17 +85,21 @@ waline:
 # 想换图：替换 source/img/banner.jpg 即可，四个页面会一起更新
 archive:
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 category:
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 tag:
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 # 「关于」页面 —— 使用 Fluid 原生布局（source/about/index.md 里设了 layout: about）
 # 头像 / 名字 / 简介 / 社交图标都在这里配置；正文仍写在 index.md 里
 about:
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
   avatar: /img/avatar.jpg          # 对应 source/img/avatar.jpg
   name: "JunMochang"               # 想改名字改这里
   intro: "这个人不懒，但是什么都没写"    # 一句话简介
@@ -107,8 +113,10 @@ about:
 # 其他自定义页面（source/ 下非 _posts 的页面）走这个
 page:
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 # 404 页面
 page404:
   banner_img: /img/banner.jpg
+  banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
     
