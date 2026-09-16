@@ -53,4 +53,18 @@ post:
     views:
       enable: true      # 在文章标题下方显示该文阅读量
       source: "busuanzi"
+
+  # 评论系统
+  comments:
+    enable: true
+    type: waline        # 使用 Waline（其余 11 种见主题默认配置第 774 行）
+
+
+# ------------------------------------------------------------
+# Waline 评论系统
+# ------------------------------------------------------------
+# 服务端已部署在 Cloudflare Workers + D1（独立于博客仓库）
+# 管理后台：https://waline.junmochang12.workers.dev/ui
+waline:
+  serverURL: 'https://waline.junmochang12.workers.dev'
     
