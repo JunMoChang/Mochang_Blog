@@ -20,6 +20,9 @@
 # 首页设置
 # ------------------------------------------------------------
 index:
+  # 首屏大背景图（对应 source/img/banner.jpg）
+  banner_img: /img/banner.jpg
+
   # 首页副标题（"An elegant Material-Design theme for Hexo" 就在这）
   slogan:
     # 关闭副标题 —— 首页不再显示这一行
@@ -48,6 +51,9 @@ footer:
 # 文章页
 # ------------------------------------------------------------
 post:
+  # 文章页大背景图
+  banner_img: /img/banner.jpg
+
   meta:
     # 单篇文章的浏览量
     views:
@@ -67,4 +73,42 @@ post:
 # 管理后台：https://waline.junmochang12.workers.dev/ui
 waline:
   serverURL: 'https://waline.junmochang12.workers.dev'
+
+
+# ------------------------------------------------------------
+# 大背景（首屏头图）—— 各页面统一使用同一张
+# ------------------------------------------------------------
+# 图片位置：source/img/banner.jpg
+# 已从 4K 压缩：3840x2160 / 209 KB  →  1920x1080 / 103 KB
+# 想换图：替换 source/img/banner.jpg 即可，四个页面会一起更新
+archive:
+  banner_img: /img/banner.jpg
+
+category:
+  banner_img: /img/banner.jpg
+
+tag:
+  banner_img: /img/banner.jpg
+
+# 「关于」页面 —— 使用 Fluid 原生布局（source/about/index.md 里设了 layout: about）
+# 头像 / 名字 / 简介 / 社交图标都在这里配置；正文仍写在 index.md 里
+about:
+  banner_img: /img/banner.jpg
+  avatar: /img/avatar.jpg          # 对应 source/img/avatar.jpg
+  name: "JunMochang"               # 想改名字改这里
+  intro: "这个人不懒，但是什么都没写"    # 一句话简介
+  # 社交图标，鼠标悬停会显示 tip 文字
+  # 实测：此处数组会「整体替换」主题默认值，主题自带的豆瓣/微信不会出现
+  # 想加图标就往下续行，常用 class 可从 https://hexo.fluid-dev.com/docs/icon/ 查
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com/JunMoChang", tip: "GitHub" }
+    # - { class: "iconfont icon-mail-fill", link: "mailto:你的邮箱", tip: "邮箱" }
+
+# 其他自定义页面（source/ 下非 _posts 的页面）走这个
+page:
+  banner_img: /img/banner.jpg
+
+# 404 页面
+page404:
+  banner_img: /img/banner.jpg
     

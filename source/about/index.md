@@ -1,7 +1,8 @@
 ---
+layout: about
 title: 关于我
 ---
 
-<img src="NARUTO.jpg" alt="头像" width="160" style="border-radius: 50%;" />
+<!-- 想补充内容就写在这里，会显示在「头像 + 名字 + 简介 + 社交图标」那块的下方 -->
 
-### JunMochang
+<!-- 头像、名字、简介、社交图标统一在 _config.fluid.yml 的 about: 段里配置 -->
