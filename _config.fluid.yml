@@ -25,11 +25,20 @@ apple_touch_icon: /img/apple-touch-icon.jpg    # 180x180，iOS 添加到主屏�
 
 
 # ------------------------------------------------------------
+# 导航栏
+# ------------------------------------------------------------
+navbar:
+  # 左上角的站点名，点击会回到首页
+  # 主题默认是 "Fluid"；留空则使用 _config.yml 里的 title
+  blog_title: "JuneMochang"
+
+
+# ------------------------------------------------------------
 # 首页设置
 # ------------------------------------------------------------
 index:
   # 首屏大背景图（对应 source/img/banner.jpg）
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-home.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
   # 首页副标题（"An elegant Material-Design theme for Hexo" 就在这）
@@ -61,7 +70,7 @@ footer:
 # ------------------------------------------------------------
 post:
   # 文章页大背景图
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-dark.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
   meta:
@@ -92,21 +101,21 @@ waline:
 # 已从 4K 压缩：3840x2160 / 209 KB  →  1920x1080 / 103 KB
 # 想换图：替换 source/img/banner.jpg 即可，四个页面会一起更新
 archive:
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-dark.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 category:
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-dark.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 tag:
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-dark.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 # 「关于」页面 —— 使用 Fluid 原生布局（source/about/index.md 里设了 layout: about）
 # 头像 / 名字 / 简介 / 社交图标都在这里配置；正文仍写在 index.md 里
 about:
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-about.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
   avatar: /img/avatar.jpg          # 对应 source/img/avatar.jpg
   name: "JunMochang"               # 想改名字改这里
@@ -120,11 +129,11 @@ about:
 
 # 其他自定义页面（source/ 下非 _posts 的页面）走这个
 page:
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-dark.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
 
 # 404 页面
 page404:
-  banner_img: /img/banner.jpg
+  banner_img: /img/banner-dark.jpg
   banner_mask_alpha: 0.5    # 黑色蒙版不透明度，越大标题越清晰（默认 0.3）
     
