@@ -68,6 +68,11 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+  # 标签名 → URL slug 的映射
+  # 必须显式指定：Hexo 默认会把 C++ 和 C# 都转成 "c"，
+  # 导致两个标签合并成同一个页面（曾出现此问题）
+  "C++": cpp
+  "C#": csharp
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
