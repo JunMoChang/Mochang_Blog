@@ -30,7 +30,7 @@ apple_touch_icon: /img/apple-touch-icon.jpg    # 180x180，iOS 添加到主屏�
 navbar:
   # 左上角的站点名，点击会回到首页
   # 主题默认是 "Fluid"；留空则使用 _config.yml 里的 title
-  blog_title: "JuneMochang"
+  blog_title: "JunMochang"
 
 
 # ------------------------------------------------------------
