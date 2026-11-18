@@ -63,6 +63,9 @@ index:
 # 页脚 —— 站点总 PV / UV
 # ------------------------------------------------------------
 footer:
+  # 页脚第一行文字，主题默认是 “Hexo ♥ Fluid” 的链接
+  # 置空则不显示这一行，只保留下面的访问统计
+  content: ''
   statistics:
     enable: true      # 在页脚显示站点总访问量
     source: "busuanzi"  # 不蒜子，无需注册，零配置
@@ -82,17 +85,18 @@ post:
       enable: true      # 在文章标题下方显示该文阅读量
       source: "busuanzi"
 
-  # 评论系统
+  # 评论系统（已关闭）
   comments:
-    enable: true
+    enable: false       # 关闭后不再注入评论组件，也不会加载 Waline 脚本
     type: waline        # 使用 Waline（其余 11 种见主题默认配置第 774 行）
 
 
 # ------------------------------------------------------------
-# Waline 评论系统
+# Waline 评论系统（上方 post.comments.enable 已关闭，此处暂不生效）
 # ------------------------------------------------------------
 # 服务端已部署在 Cloudflare Workers + D1（独立于博客仓库）
 # 管理后台：https://waline.junmochang12.workers.dev/ui
+# 想恢复评论：把上面 post.comments.enable 改回 true 即可
 waline:
   serverURL: 'https://waline.junmochang12.workers.dev'
 
